@@ -1,0 +1,34 @@
+@import "../../scss/styles.scss";
+
+.post-list-container {
+	.post-item-secondary {
+		a {
+			text-decoration: none;
+		}
+
+		.text-container {
+			p {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+			}
+
+			h2 {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 30px;
+
+		@include large-screen {
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		}
+	}
+}

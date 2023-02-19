@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "newsy-blocks/cta",
+  "version": "0.1.0",
+  "title": "CTA",
+  "category": "widgets",
+  "icon": "megaphone",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cta",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": null,
+      "source": "html",
+      "selector": "h2"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": null,
+      "source": "html",
+      "selector": "p"
+    },
+    "posts": {
+      "type": "array"
+    },
+    "formId": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

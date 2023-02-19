@@ -1,0 +1,45 @@
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/cta/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+.cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+.cta-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cta-container form {
+  gap: 15px;
+  margin-top: 15px;
+}
+.cta-container form label.gfield_label.gform-field-label {
+  display: none;
+}
+.cta-container form input {
+  width: 100%;
+}
+.cta-container form .gform-body.gform_body {
+  width: 100%;
+}
+.cta-container form .gform_footer.before {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.cta-container form .gform_footer.before input {
+  margin: 15px 0 0 0;
+}
+.cta-container .gform-block__placeholder-brand {
+  display: none;
+}
+.cta-container .components-placeholder.wp-block-embed.gform-block__placeholder {
+  min-height: unset;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,0 +1,46 @@
+// News Ticker
+#ticker {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	ul {
+		animation: scroll 30s linear 0s infinite;
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			margin-left: 100px;
+			white-space: normal;
+
+			a {
+				display: block;
+				margin: 0;
+				text-align: center;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Keyframes
+@keyframes scroll {
+	from {
+		transform: translate(100%, 0);
+	}
+
+	to {
+		transform: translate(-150%, 0);
+	}
+}

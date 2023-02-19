@@ -1,0 +1,14 @@
+@import "../../scss/styles.scss";
+
+.post-grid-container {
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 15px;
+
+		@include large-screen {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 250px 250px;
+		}
+	}
+}

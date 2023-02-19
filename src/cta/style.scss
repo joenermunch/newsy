@@ -1,0 +1,49 @@
+.cta-container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 30px;
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	form {
+		gap: 15px;
+		margin-top: 15px;
+
+		label.gfield_label.gform-field-label {
+			display: none;
+		}
+
+		input {
+			width: 100%;
+		}
+
+		.gform-body.gform_body {
+			width: 100%;
+		}
+
+		.gform_footer.before {
+			padding: 0;
+			margin: 0;
+			display: block;
+
+			input {
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+
+	.gform-block__placeholder-brand {
+		display: none;
+	}
+
+	.components-placeholder.wp-block-embed.gform-block__placeholder {
+		min-height: unset;
+	}
+}
