@@ -16,7 +16,7 @@ add_action( 'init', 'newsy_blocks_add_category_color_meta' );
 // Add the color picker script to the admin page
 function newsy_blocks_enqueue_color_picker() {
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_script( 'newsy-blocks-color-picker', plugins_url( '/js/category-colors.js', dirname( __FILE__ ) ), array( 'wp-color-picker' ), false, true );
+    wp_enqueue_script( 'newsy-blocks-color-picker', plugins_url( '/assets/js/category-colors.js', dirname( __FILE__ ) ), array( 'wp-color-picker' ), false, true );
 }
 add_action( 'admin_enqueue_scripts', 'newsy_blocks_enqueue_color_picker' );
 
